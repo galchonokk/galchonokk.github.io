@@ -83,7 +83,7 @@
         function last() {//сюда последние новости
             if(i==0){
                 var elem = document.getElementById('main');
-                elem.outerHTML = '<div id="main">           <H2>27.11.2020</H2><H2>11:58</H2>   <p>Галя только сегодня увидела, то сообщение, которое я оставил в Икеи, честно говоря, я думал, что она так и не найдет) </p> <img src="fir.jpg" style="width:55%;">                                                                     <span class="right" onclick="last()"><p class="pright">></p></span>    <span class="left" onclick="next()"><p class="pleft">></p></span>       <p id="nomer"></p></div>';
+                elem.outerHTML = '<div id="main" style="padding:5% 30% 15% 30%;">           <H2>27.11.2020</H2><H2>11:58</H2>   <p>Галя только сегодня увидела, то сообщение, которое я оставил в Икеи, честно говоря, я думал, что она так и не найдет) </p> <img src="fir.jpg" style="width:70%;">                                                                     <span class="right" onclick="last()"><p class="pright">></p></span>    <span class="left" onclick="next()"><p class="pleft">></p></span>       <p id="nomer"></p></div>';
                 $('div').fadeTo( 2000, 1 );
                 var elem = document.getElementById('nomer');
                 elem.outerHTML ='<p id="nomer">Страница '+(i+2)+'</p>';
@@ -106,7 +106,7 @@
             i=i-1;
             if(i==0){
                 var elem = document.getElementById('main');
-                elem.outerHTML = '<div id="main">     <H2>27.11.2020</H2><H2>17:15</H2>   <p>Жду Гальчонка с хоккея, капец как долго идет время(<br>Да кто этот ваш хоккей? Скоро станет самым нелюбимым моим видом спорта</p> <img src="fir1.jpg" style="width:100%;">                                                                                                                           <span class="right" onclick="last()"><p class="pright">></p></span>           <p id="nomer"></p></div>';
+                elem.outerHTML = '<div id="main" style="padding:5% 30% 15% 30%;">     <H2>27.11.2020</H2><H2>17:15</H2>   <p>Жду Гальчонка с хоккея, капец как долго идет время(<br>Да кто этот ваш хоккей? Скоро станет самым нелюбимым моим видом спорта</p> <img src="fir1.jpg" style="width:100%;">                                                                                                                           <span class="right" onclick="last()"><p class="pright">></p></span>           <p id="nomer"></p></div>';
                 $('div').fadeTo( 2000, 1 );
                 var elem = document.getElementById('nomer');
                 elem.outerHTML ='<p id="nomer">Страница '+(i+1)+'</p>';
@@ -114,19 +114,19 @@
 
             if(i==1){
                 var elem = document.getElementById('main');
-                elem.outerHTML = '<div id="main">     <H2>27.11.2020</H2><H2>11:58</H2>   <p>Галя только сегодня увидела, то сообщение, которое я оставил в Икеи, честно говоря, я думал, что она так и не найдет) </p> <img src="fir.jpg" style="width:55%;">                                                                                                                  <span class="left" onclick="next()"><p class="pleft">></p></span>          <span class="right" onclick="last()"><p class="pright">></p></span>           <p id="nomer"></p></div>';
+                elem.outerHTML = '<div id="main" style="padding:5% 30% 15% 30%;">     <H2>27.11.2020</H2><H2>11:58</H2>   <p>Галя только сегодня увидела, то сообщение, которое я оставил в Икеи, честно говоря, я думал, что она так и не найдет) </p> <img src="fir.jpg" style="width:70%;">                                                                                                                  <span class="left" onclick="next()"><p class="pleft">></p></span>          <span class="right" onclick="last()"><p class="pright">></p></span>           <p id="nomer"></p></div>';
                 $('div').fadeTo( 2000, 1 );
                 var elem = document.getElementById('nomer');
                 elem.outerHTML ='<p id="nomer">Страница '+(i+1)+'</p>';
             }
 
-            
+
             return i;
         }
 
     </script>
 <center>
-    <div id="main">     <H2>27.11.2020</H2><H2>17:15</H2>   <p>Жду Гальчонка с хоккея, капец как долго идет время(<br>Да кто этот ваш хоккей? Скоро станет самым нелюбимым моим видом спорта</p> <img src="fir1.jpg" style="width:100%;">                                                                                                                            <span class="right" onclick="last()"><p class="pright">></p></span>        <p id="nomer">Страница 1</p></div>
+    <div id="main" style="padding:5% 30% 15% 30%;">     <H2>27.11.2020</H2><H2>17:15</H2>   <p>Жду Гальчонка с хоккея, капец как долго идет время(<br>Да кто этот ваш хоккей? Скоро станет самым нелюбимым моим видом спорта</p> <img src="fir1.jpg" style="width:100%;">                                                                                                                            <span class="right" onclick="last()"><p class="pright">></p></span>        <p id="nomer">Страница 1</p></div>
 
 </center>
 </body>
