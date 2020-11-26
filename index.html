@@ -83,14 +83,14 @@
         function last() {//сюда последние новости
             if(i==0){
                 var elem = document.getElementById('main');
-                elem.outerHTML = '<div id="main">           <H2></H2>   <p></p>                                                                <!--<span class="right" onclick="last()"><p class="pright">></p></span>-->     <span class="left" onclick="next()"><p class="pleft">></p></span>       <p id="nomer"></p></div>';
+                elem.outerHTML = '<div id="main">           <H2></H2>   <p> </p>                                                                <!--<span class="right" onclick="last()"><p class="pright">></p></span>-->     <span class="left" onclick="next()"><p class="pleft">></p></span>       <p id="nomer"></p></div>';
                 $('div').fadeTo( 2000, 1 );
                 var elem = document.getElementById('nomer');
                 elem.outerHTML ='<p id="nomer">Страница '+(i+2)+'</p>';
             }
             if(i==1){
                 var elem = document.getElementById('main');
-                elem.outerHTML = '<div id="main">           <H2></H2>   <p></p>                                                                                                   <span class="right" onclick="last()"><p class="pright">></p></span>        <span class="left" onclick="next()"><p class="pleft">></p></span>       </div>';
+                elem.outerHTML = '<div id="main">           <H2></H2>   <p> </p>                                                                                                   <span class="right" onclick="last()"><p class="pright">></p></span>        <span class="left" onclick="next()"><p class="pleft">></p></span>       </div>';
                 $('div').fadeTo( 2000, 1 );
             }
             i++;
