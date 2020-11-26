@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Гальчонок</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+    <style>
+      body{
+          background:url("first.png");
+          background-size: 100%;
+      }
+      div{
+          opacity: 0.1;
+          width: 100%;
+          height:100%;
+          text-align: center;
+          padding: 15% 30% 15% 30%;
+          background:none;
+      }
+      .right{
+            position: fixed; 
+            bottom: 0%; 
+            right: 0%;
+            border:solid black 0px;
+            width:15%;
+            height:100%;
+            background:none; 
+            color:black;
+            text-align: center;
+            opacity: 0.25;
+            transition:0.5s;
+        }
+        .left{
+            position: fixed; 
+            bottom: 0%; 
+            right: 85%;
+            border:solid black 0px;
+            width:15%;
+            height:100%;
+            background:none; 
+            color:black;
+            text-align: center;
+            rotate: 180deg;
+            opacity: 0.25;
+            transition:0.5s;
+        }
+        .pleft{
+            font-size:40px;
+            transform: rotate(180deg);
+            position: absolute;
+            top: 50%;
+            left: 45%;
+        }
+        .pright{
+            font-size:40px;
+            position: absolute;
+            top: 50%;
+            right: 45%;
+        }
+        .left:hover{
+            background:black;
+            color:White;
+            transition:0.5s;
+        }
+        .right:hover{
+            background:black;
+            color:White;
+            transition:0.5s;
+        }
+        #nomer{
+            top: 90%;
+            text-align: center;
+        }
+    </style>
+    </head>
+    <body>
+    <script>
+        var i=0;
+        window.onload=function(){
+            $( '#main' ).fadeTo( 2000, 1 );
+        }
+    
+        function last() {//сюда последние новости
+            if(i==0){
+                var elem = document.getElementById('main');
+                elem.outerHTML = '<div id="main">           <H2></H2>   <p></p>                                                                <!--<span class="right" onclick="last()"><p class="pright">></p></span>-->     <span class="left" onclick="next()"><p class="pleft">></p></span>       <p id="nomer"></p></div>';
+                $('div').fadeTo( 2000, 1 );
+                var elem = document.getElementById('nomer');
+                elem.outerHTML ='<p id="nomer">Страница '+(i+2)+'</p>';
+            }
+            if(i==1){
+                var elem = document.getElementById('main');
+                elem.outerHTML = '<div id="main">           <H2></H2>   <p></p>                                                                                                   <span class="right" onclick="last()"><p class="pright">></p></span>        <span class="left" onclick="next()"><p class="pleft">></p></span>       </div>';
+                $('div').fadeTo( 2000, 1 );
+            }
+            i++;
+            return i;
+        }
+
+        function next() {//сюда последние новости
+            i=i-1;
+            if(i==0){
+                var elem = document.getElementById('main');
+                elem.outerHTML = '<div id="main">     <H2></H2>   <p></p>                                                                                                                             <span class="right" onclick="last()"><p class="pright">></p></span>           <p id="nomer"></p></div>';
+                $('div').fadeTo( 2000, 1 );
+                var elem = document.getElementById('nomer');
+                elem.outerHTML ='<p id="nomer">Страница '+(i+1)+'</p>';
+            }
+            if(i==1){
+                var elem = document.getElementById('main');
+                elem.outerHTML = '<div id="main">           <H2></H2>   <p></p>                                                                  <span class="right" onclick="last()"><p class="pright">></p></span>        <span class="left" onclick="next()"><p class="pleft">></p></span>       </div>';
+                $('div').fadeTo( 2000, 1 );
+            }
+            return i;
+        }
+
+    </script>
+<center>
+    <div id="main">     <H2>27.11.2020</H2><H2>02:51</H2>   <p>Всем привет! Сегодня открылся сайт о самой прекрасной девушке, которую я когда-либо видел!
+                                                                Её зовут Гальчонок. Здесь я буду выкладывать все о ней, что захочу. Начиная от новостей и заканчивания
+                                                                видео! Сегодня вышло интервью с ней, и знаете, что я хочу сказать? Капец, какая она у меня умничка!
+                                                                По комментариям под интервью видно, что я не один влюбился в неё, но я больше всех! Постараюсь выкладывать 
+                                                                сюда что-нибудь, как можно чаще, так что ждите контента! Ёще хотел сказать, что я очень люблю её и скучаю по ней!❤  </p>                                                                                                                             <!--<span class="right" onclick="last()"><p class="pright">></p></span>-->          <p id="nomer">Страница 1</p></div>
+
+</center>
+</body>
+</html>
