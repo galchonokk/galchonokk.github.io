@@ -90,7 +90,7 @@
             }
             if(i==1){
                 var elem = document.getElementById('main');
-                elem.outerHTML = '<div id="main">           <H2></H2>   <p>kek</p>                                                                                                   <span class="right" onclick="last()"><p class="pright">></p></span>        <span class="left" onclick="next()"><p class="pleft">></p></span>       </div>';
+                elem.outerHTML = '<div id="main">           <H2></H2>   <p></p>                                                                                                   <span class="right" onclick="last()"><p class="pright">></p></span>        <span class="left" onclick="next()"><p class="pleft">></p></span>       </div>';
                 $('div').fadeTo( 2000, 1 );
             }
             i++;
@@ -101,14 +101,14 @@
             i=i-1;
             if(i==0){
                 var elem = document.getElementById('main');
-                elem.outerHTML = '<div id="main">     <H2></H2>   <p>Наконец-то выпустили интервью у самого красивого волонтера планеты!</p>                                                                                                                             <span class="right" onclick="last()"><p class="pright">></p></span>           <p id="nomer"></p></div>';
+                elem.outerHTML = '<div id="main">     <H2></H2>   <p></p>                                                                                                                             <span class="right" onclick="last()"><p class="pright">></p></span>           <p id="nomer"></p></div>';
                 $('div').fadeTo( 2000, 1 );
                 var elem = document.getElementById('nomer');
                 elem.outerHTML ='<p id="nomer">Страница '+(i+1)+'</p>';
             }
             if(i==1){
                 var elem = document.getElementById('main');
-                elem.outerHTML = '<div id="main">           <H2></H2>   <p>Подскажите идею как сделать чтоб при</p>                                                                  <span class="right" onclick="last()"><p class="pright">></p></span>        <span class="left" onclick="next()"><p class="pleft">></p></span>       </div>';
+                elem.outerHTML = '<div id="main">           <H2></H2>   <p></p>                                                                  <span class="right" onclick="last()"><p class="pright">></p></span>        <span class="left" onclick="next()"><p class="pleft">></p></span>       </div>';
                 $('div').fadeTo( 2000, 1 );
             }
             return i;
