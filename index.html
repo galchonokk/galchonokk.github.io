@@ -9,6 +9,9 @@
           background:url("first.png");
           background-size: 100%;
       }
+      img{
+          width: 60%;
+      }
       div{
           opacity: 0.1;
           width: 100%;
@@ -71,6 +74,12 @@
             top: 90%;
             text-align: center;
         }
+        @media only screen and (max-width: 1300px) {
+            img{
+                width: 100%;
+            }
+        
+        }
     </style>
     </head>
     <body>
@@ -83,7 +92,7 @@
         function last() {//сюда последние новости
             if(i==0){
                 var elem = document.getElementById('main');
-                elem.outerHTML = '<div id="main" >           <H2>27.11.2020</H2><H2>17:15</H2>   <p>Жду Гальчонка с хоккея, капец как долго идет время(<br>Да кто этот ваш хоккей? Скоро станет самым нелюбимым моим видом спорта</p> <img src="fir1.jpg" style="width:100%;">                                                                     <span class="right" onclick="last()"><p class="pright">></p></span>    <span class="left" onclick="next()"><p class="pleft">></p></span>       <p id="nomer"></p></div>';
+                elem.outerHTML = '<div id="main" >           <H2>27.11.2020</H2><H2>17:15</H2>   <p>Жду Гальчонка с хоккея, капец как долго идет время(<br>Да кто этот ваш хоккей? Скоро станет самым нелюбимым моим видом спорта</p> <img src="fir1.jpg" >                                                                     <span class="right" onclick="last()"><p class="pright">></p></span>    <span class="left" onclick="next()"><p class="pleft">></p></span>       <p id="nomer"></p></div>';
                 $('div').fadeTo( 2000, 1 );
                 var elem = document.getElementById('nomer');
                 elem.outerHTML ='<p id="nomer">Страница '+(i+2)+'</p>';
@@ -91,7 +100,7 @@
             
             if(i==1){
                 var elem = document.getElementById('main');
-                elem.outerHTML = '<div id="main" >           <H2>27.11.2020</H2><H2>11:58</H2>   <p>Галя только сегодня увидела, то сообщение, которое я оставил в Икеи, честно говоря, я думал, что она так и не найдет) </p> <img src="fir.jpg" style="width:70%;">                                                                     <span class="right" onclick="last()"><p class="pright">></p></span>    <span class="left" onclick="next()"><p class="pleft">></p></span>       <p id="nomer"></p></div>';
+                elem.outerHTML = '<div id="main" >           <H2>27.11.2020</H2><H2>11:58</H2>   <p>Галя только сегодня увидела, то сообщение, которое я оставил в Икеи, честно говоря, я думал, что она так и не найдет) </p> <img src="fir.jpg" >                                                                     <span class="right" onclick="last()"><p class="pright">></p></span>    <span class="left" onclick="next()"><p class="pleft">></p></span>       <p id="nomer"></p></div>';
                 $('div').fadeTo( 2000, 1 );
                 var elem = document.getElementById('nomer');
                 elem.outerHTML ='<p id="nomer">Страница '+(i+2)+'</p>';
@@ -114,7 +123,7 @@
             i=i-1;
             if(i==0){
                 var elem = document.getElementById('main');
-                elem.outerHTML = '<div id="main" >     <H2>28.11.2020</H2><H2>03:39</H2>   <p>Cегодня мы с Гальчонком уже 10 дней вместе. Я ее очень люблю!❤️  Она уже спит, и я уже иду, так что желаю Гальчонку спокойной ночи!🌙</p> <img src="fir2.jpg" style="width:60%;">                                                                                                                           <span class="right" onclick="last()"><p class="pright">></p></span>           <p id="nomer"></p></div>';
+                elem.outerHTML = '<div id="main" >     <H2>28.11.2020</H2><H2>03:39</H2>   <p>Cегодня мы с Гальчонком уже 10 дней вместе. Я ее очень люблю!❤️  Она уже спит, и я уже иду, так что желаю Гальчонку спокойной ночи!🌙</p> <img src="fir2.jpg" >                                                                                                                           <span class="right" onclick="last()"><p class="pright">></p></span>           <p id="nomer"></p></div>';
                 $('div').fadeTo( 2000, 1 );
                 var elem = document.getElementById('nomer');
                 elem.outerHTML ='<p id="nomer">Страница '+(i+1)+'</p>';
@@ -122,7 +131,7 @@
 
             if(i==1){
                 var elem = document.getElementById('main');
-                elem.outerHTML = '<div id="main" >     <H2>27.11.2020</H2><H2>17:15</H2>   <p>Жду Гальчонка с хоккея, капец как долго идет время(<br>Да кто этот ваш хоккей? Скоро станет самым нелюбимым моим видом спорта</p> <img src="fir1.jpg" style="width:100%;">                                                                                                       <span class="left" onclick="next()"><p class="pleft">></p></span>                     <span class="right" onclick="last()"><p class="pright">></p></span>           <p id="nomer"></p></div>';
+                elem.outerHTML = '<div id="main" >     <H2>27.11.2020</H2><H2>17:15</H2>   <p>Жду Гальчонка с хоккея, капец как долго идет время(<br>Да кто этот ваш хоккей? Скоро станет самым нелюбимым моим видом спорта</p> <img src="fir1.jpg" >                                                                                                       <span class="left" onclick="next()"><p class="pleft">></p></span>                     <span class="right" onclick="last()"><p class="pright">></p></span>           <p id="nomer"></p></div>';
                 $('div').fadeTo( 2000, 1 );
                 var elem = document.getElementById('nomer');
                 elem.outerHTML ='<p id="nomer">Страница '+(i+1)+'</p>';
@@ -130,7 +139,7 @@
 
             if(i==2){
                 var elem = document.getElementById('main');
-                elem.outerHTML = '<div id="main" >     <H2>27.11.2020</H2><H2>11:58</H2>   <p>Галя только сегодня увидела, то сообщение, которое я оставил в Икеи, честно говоря, я думал, что она так и не найдет) </p> <img src="fir.jpg" style="width:70%;">                                                                                                                  <span class="left" onclick="next()"><p class="pleft">></p></span>          <span class="right" onclick="last()"><p class="pright">></p></span>           <p id="nomer"></p></div>';
+                elem.outerHTML = '<div id="main" >     <H2>27.11.2020</H2><H2>11:58</H2>   <p>Галя только сегодня увидела, то сообщение, которое я оставил в Икеи, честно говоря, я думал, что она так и не найдет) </p> <img src="fir.jpg" >                                                                                                                  <span class="left" onclick="next()"><p class="pleft">></p></span>          <span class="right" onclick="last()"><p class="pright">></p></span>           <p id="nomer"></p></div>';
                 $('div').fadeTo( 2000, 1 );
                 var elem = document.getElementById('nomer');
                 elem.outerHTML ='<p id="nomer">Страница '+(i+1)+'</p>';
@@ -144,7 +153,7 @@
 <center>
 <div id="main">     
 
-<H2>28.11.2020</H2><H2>03:39</H2>   <p>Cегодня мы с Гальчонком уже 10 дней вместе. Я ее очень люблю!❤️  Она уже спит, и я уже иду, так что желаю Гальчонку спокойной ночи!🌙</p> <img src="fir2.jpg" style="width:60%;">
+<H2>28.11.2020</H2><H2>03:39</H2>   <p>Cегодня мы с Гальчонком уже 10 дней вместе. Я ее очень люблю!❤️  Она уже спит, и я уже иду, так что желаю Гальчонку спокойной ночи!🌙</p> <img src="fir2.jpg" >
 
 <span class="right" onclick="last()"><p class="pright">></p></span>        <p id="nomer">Страница 1</p></div>
 
